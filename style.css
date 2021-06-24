@@ -1,3 +1,23 @@
 /*  Add your styling here */
 
+#nav {
+    background-color: #fff;
+}
 
+#nav .container-fluid {
+    justify-content: flex-end;
+
+}
+
+#navbar-nav {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (min-width: 900px) {
+
+    #nav {
+        display: none;
+    }
+    
+}
