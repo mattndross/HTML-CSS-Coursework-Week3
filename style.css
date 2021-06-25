@@ -25,11 +25,27 @@ nav h1 {
 
 .cake-btn {
     border: none;
-    background-color: #ECEAF7;    
+    background-color: #ECEAF7;
+    cursor: pointer;   
 }
-.menu-link-container {
 
+.menu-link-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    background: #645353DB;
 }
+
+.menu-link-container a {    
+    color: #ECEAF7;
+    text-decoration: none;
+    transition: color 5ms;
+}
+
+.menu-link-container a:hover {
+    color: white;    
+}
+
 
 .display-none {
     display: none;
