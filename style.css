@@ -200,11 +200,13 @@ footer h5 {
   .text-container h2 {
       font-size: 60px;
       padding-bottom: 20px;
-
-
   }
 
   .welcome-image {
     width: 49%;
+  }
+
+  .image-container {
+      width: 23.5%;
   }
 }
