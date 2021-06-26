@@ -6,12 +6,22 @@ body {
 
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family: "hammersmith One", Arial, Helvetica, sans-serif;
 }
 
+a {    
+    color: #ECEAF7;
+    text-decoration: none;
+    transition: color 5ms;
+}
+
+a:hover {
+    color: white;    
+}
+
 /* MOBILE NAV BAR*/
-nav {
+.mobile-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,17 +45,6 @@ nav h1 {
     padding: 5px;
     background: #645353DB;
 }
-
-.menu-link-container a {    
-    color: #ECEAF7;
-    text-decoration: none;
-    transition: color 5ms;
-}
-
-.menu-link-container a:hover {
-    color: white;    
-}
-
 
 .display-none {
     display: none;
@@ -86,11 +85,31 @@ nav h1 {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+/* DESKTOP MENU */
 .desktop-menu {
-    display: none;
-    justify-content: space-around;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    background: #645353DB;
+    margin-top: 25px;
 }
 
+.desktop-menu a {
+    margin-right: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    transition: border-bottom margin-bottom 1s;
+    
+}
+
+.desktop-menu a:hover {
+    border-bottom: 2.5px solid #ECEAF7;
+    margin-bottom: -2.5px;
+}
+
+/* SECTIONS */
 .section-one {
     padding-top: 35px;
     padding-bottom: 5px;
@@ -123,6 +142,16 @@ nav h1 {
     height: 100%;
     object-fit: cover;
 }
+
+/* FOOTER */
+footer {
+    background: #645353DB;
+    color: #ECEAF7;
+}
+
+footer h5 {
+    margin: 0;
+}
 @media (min-width: 540px) {
     .col-6 {
         justify-content: center;
@@ -130,7 +159,7 @@ nav h1 {
 
 }
 @media (min-width: 900px) {
-  #nav {
+  .mobile-nav {
     display: none;
   }
 
@@ -140,9 +169,5 @@ nav h1 {
 
   .banner h1 {
       display: block;
-  }
-
-  .desktop-nav {
-      display: flex;
   }
 }
