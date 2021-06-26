@@ -66,8 +66,10 @@ nav h1 {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: flex-end;
+  align-content: flex-end;
 }
 
 .banner h1 {
@@ -88,7 +90,7 @@ nav h1 {
 
 /* DESKTOP MENU */
 .desktop-menu {
-    display: flex;
+    display: none;
     justify-content: flex-end;
     align-items: center;
     height: 40px;
@@ -169,5 +171,9 @@ footer h5 {
 
   .banner h1 {
       display: block;
+  }
+
+  .desktop-menu {
+      display: flex;
   }
 }
