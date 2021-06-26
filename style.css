@@ -158,11 +158,49 @@ nav h1 {
 footer {
   background: #645353db;
   color: #eceaf7;
+  margin-top: 25px;
 }
 
 footer h5 {
   margin: 0;
 }
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.contact h4 {
+    margin: 0px 15px;
+}
+
+.contact> div {
+    background: black;
+    margin: 10px;
+    width: 80%;
+    border-radius: 2px;
+}
+
+.phone {
+    width: 80%;
+}
+
+.signature {
+    width: 78.25%;
+    border-top: 2px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 15%;
+    padding: 5px;
+}
+
+.signature h5 {
+    margin-left: 10px;
+}
+
+
+/* RESPONSIVE */
 @media (min-width: 540px) {
   .col-6 {
     justify-content: center;
@@ -208,5 +246,21 @@ footer h5 {
 
   .image-container {
       width: 23.5%;
+  }
+
+  .contact {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+
+  .contact> div {
+      width: 25%;
+  }
+
+  .signature {
+      margin-left: 10.45%;      
+      width: 78.45%;
+      text-align: center;
   }
 }
